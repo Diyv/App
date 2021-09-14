@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scaleType="centerCrop"
+    tools:context=".MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="271dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="69dp"
+        app:columnCount="2"
+        app:columnOrderPreserved="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="6">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            tools:srcCompat="@drawable/sigara" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            android:tag="1"
+            tools:srcCompat="@drawable/kalp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            android:tag="2"
+            tools:srcCompat="@drawable/kitap" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            android:tag="3"
+            tools:srcCompat="@drawable/kosu" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            android:tag="4"
+            tools:srcCompat="@drawable/saat" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="120sp"
+            android:layout_margin="7dp"
+            android:onClick="ClickIntentActivity2"
+            android:tag="5"
+            tools:srcCompat="@drawable/uyku" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="432dp"
+        android:layout_height="213dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/banner" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="89dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="282dp"
+        android:layout_height="37dp"
+        android:text="Planla. Düzenle. Başar."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
